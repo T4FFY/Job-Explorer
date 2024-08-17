@@ -1,12 +1,12 @@
 import Home from "./components/Home";
-import Explorecareer from "./components/Explorecareer";
+import Menu from "./components/Menu";
 
 
 function App() {
   return (
     <>
     <Home></Home>
-    <Explorecareer></Explorecareer>
+    <Menu></Menu>
   </> 
   );
 } 
