@@ -1,17 +1,14 @@
-import MyComponent from "./components/MyComponent";
+import Home from "./components/Home";
+import Explorecareer from "./components/Explorecareer";
+
 
 function App() {
   return (
     <>
-      <h1 className="text-red-500">Hi there</h1>
-      <h1 className="text-green-500">Hello there</h1>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-    </>
+    <Home></Home>
+    <Explorecareer></Explorecareer>
+  </> 
   );
-}
+} 
 
 export default App;
