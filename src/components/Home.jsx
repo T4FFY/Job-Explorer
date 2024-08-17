@@ -1,8 +1,6 @@
 import React from 'react';
 import { Button } from "flowbite-react";
 
-
-
 function Home() {
   return (
     <div className="flex flex-col items-start justify-start min-h-screen bg-light-blue p-60 overflow-hidden">
