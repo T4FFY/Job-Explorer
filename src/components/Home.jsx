@@ -23,7 +23,7 @@ function Home() {
     </h1>
 
     <div className="max-w-lg"><p className="font-mono text-lg text-gray-700 mb-6">
-      Get ready for your future with CareerQuest! 
+      Get ready for your future with CareerNav.! 
       Explore exciting job options, learn about different careers, and find out what steps to take to make your dreams a reality.
     </p></div>
     
