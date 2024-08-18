@@ -10,7 +10,7 @@ export default function Navbar() {
         <CustomLink to="/home" className="text-black font-mono">Home</CustomLink>
         <CustomLink to="/explorecareer" className="text-black font-mono">Careers</CustomLink>
         <CustomLink to="/quizzes" className="text-black font-mono">Quizzes</CustomLink>
-        <CustomLink to="/qa" className="text-black font-mono">Q&A</CustomLink>
+        {/* <CustomLink to="/qa" className="text-black font-mono">Q&A</CustomLink> */}
         <CustomLink to="/favorites" className="text-black font-mono">Favorites</CustomLink>
         <CustomLink to="/join" className="px-4 py-2 bg-black text-white rounded-lg hover:bg-[#FBE8A6] hover:text-[#303C6C] font-mono">
           Join

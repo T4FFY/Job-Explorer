@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import Careers from './Careers';
 import jobAreas from '../data/jobAreas';
-// import { StackedCard } from './StackedCard'
-// import { jobAreas } from '../public/assets/data/JobAreas.jsx'
+
 
 // const jobAreas = [
 //   {

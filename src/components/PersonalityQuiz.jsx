@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { personalityQuiz } from "../data/personalityQuiz";
 
 export const personalityQuiz = [
   {
@@ -99,7 +98,7 @@ export const personalityQuiz = [
       { answer: "Neutral", trait: "neutral", score: 0 },
       { answer: "Disagree", trait: "social", score: -1 },
     ],
-  },
+  }
 ];
 
 const PersonalityQuiz = () => {
