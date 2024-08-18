@@ -29,11 +29,11 @@ function Webdev() {
             </div>
           </div>
 
-          <div className="flex-none w-[700px] mt-[130px]">
-            <div className="relative w-full h-[400px]">
+          <div className="flex-none w-[600px] mt-[150px]">
+            <div className="relative w-full h-[350px]">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Example YouTube video URL
+                src="https://www.youtube.com/embed/SmxrUmaAOz0" // Example YouTube video URL
                 title="Embedded Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -44,19 +44,34 @@ function Webdev() {
 
         {/* New Row of Elements */}
         <div className="flex flex-col gap-8 mt-8">
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-bold mb-4">New Section 1</h2>
+          <div className="bg-tangerine p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-bold mb-4">Skills</h2>
             <p className="text-gray-700">
-              This is a new section of content that goes below the existing
-              elements.
+              HTML, CSS, and JavaScript, with expertise in frontend frameworks,
+              backend languages, database management, API integration,
+              responsive design, cross-browser compatibility, version control ,
+              and familiarity with deployment platforms and CI/CD processes.
             </p>
           </div>
 
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-bold mb-4">New Section 2</h2>
+          <div className="bg-tangerine p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-bold mb-4">Career Benefits</h2>
             <p className="text-gray-700">
-              This is another new section of content that goes below the
-              existing elements.
+              This job offers experience in technology, problem-solving, and the
+              opportunity to work on exciting projects, with good earning
+              potential and career growth in a growing field.
+            </p>
+          </div>
+
+          <div className="bg-tangerine p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-bold mb-4">Career Path</h2>
+            <p className="text-gray-700">
+              Start with a high school diploma, pursue a relevant degree or
+              certification, gain experience through entry-level positions or
+              internships, develop key skills, and progress to advanced roles
+              like senior developer or engineering manager, with long-term goals
+              including leadership positions or entrepreneurship in the tech
+              field.
             </p>
           </div>
         </div>
