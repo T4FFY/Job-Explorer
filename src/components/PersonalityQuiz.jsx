@@ -62,7 +62,6 @@ export const personalityQuiz = [
     id: 7,
     question: "Are you more excited about the big picture than the details?",
     options: [
-      { answer: "Strongly Agree", trait: "adventurous", score: 2 },
       { answer: "Agree", trait: "adventurous", score: 1 },
       { answer: "Neutral", trait: "neutral", score: 0 },
       { answer: "Disagree", trait: "detailOriented", score: -1 },
@@ -72,7 +71,6 @@ export const personalityQuiz = [
     id: 8,
     question: "Do you enjoy leading a team and making decisions?",
     options: [
-      { answer: "Strongly Agree", trait: "social", score: 2 },
       { answer: "Agree", trait: "social", score: 1 },
       { answer: "Neutral", trait: "neutral", score: 0 },
       { answer: "Disagree", trait: "analytical", score: -1 },
@@ -82,7 +80,6 @@ export const personalityQuiz = [
     id: 9,
     question: "Do you often think about how to improve things around you?",
     options: [
-      { answer: "Strongly Agree", trait: "creative", score: 2 },
       { answer: "Agree", trait: "creative", score: 1 },
       { answer: "Neutral", trait: "neutral", score: 0 },
       { answer: "Disagree", trait: "detailOriented", score: -1 },
@@ -93,7 +90,6 @@ export const personalityQuiz = [
     question:
       "Are you comfortable making decisions based on data and evidence?",
     options: [
-      { answer: "Strongly Agree", trait: "analytical", score: 2 },
       { answer: "Agree", trait: "analytical", score: 1 },
       { answer: "Neutral", trait: "neutral", score: 0 },
       { answer: "Disagree", trait: "social", score: -1 },
@@ -197,11 +193,10 @@ const PersonalityQuiz = () => {
                 Quiz Completed!
               </h2>
               <p className="mb-4 text-center">
-                You are most aligned with: {getResult()}
+                You are most aligned with: <strong>{getResult()}</strong>
               </p>
               <p className="text-center">
-                Consider exploring careers in:{" "}
-                {/* Add corresponding job area */}
+                Consider exploring careers in: {getResult()}
               </p>
             </div>
           )}
