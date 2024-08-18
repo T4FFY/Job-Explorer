@@ -13,7 +13,7 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'yellow': '#FBE8A6',
+      'pale-yellow': '#FBE8A6',
       'light-orange': '#FAB86E',
       'tangerine': '#F4976C',
       'light-blue': '#D1FDFE',

@@ -2,17 +2,17 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md fixed top-0 left-0 right-0 z-10">
-      <Link to="/" className="site-title text-[#303C6C] text-xl font-semibold">
-        JobExplorer
+    <nav className="flex items-center justify-between p-4 bg-light-blue shadow-md fixed top-0 left-0 right-0 z-10">
+      <Link to="/" className="site-title text-black text-xl font-semibold font-mono">
+        CareerNav.
       </Link>
-      <ul className="flex space-x-4">
-        <CustomLink to="/home" className="text-[#303C6C]">Home</CustomLink>
-        <CustomLink to="/explorecareer" className="text-[#303C6C]">Career Profiles</CustomLink>
-        <CustomLink to="/quizzes" className="text-[#303C6C]">Quizzes</CustomLink>
-        <CustomLink to="/qa" className="text-[#303C6C]">Q&A</CustomLink>
-        <CustomLink to="/favorites" className="text-[#303C6C]">Favorites</CustomLink>
-        <CustomLink to="/join" className="px-4 py-2 bg-[#303C6C] text-white rounded-lg hover:bg-[#FBE8A6] hover:text-[#303C6C]">
+      <ul className="flex space-x-4 text-black">
+        <CustomLink to="/home" className="text-black font-mono">Home</CustomLink>
+        <CustomLink to="/explorecareer" className="text-black font-mono">Careers</CustomLink>
+        <CustomLink to="/quizzes" className="text-black font-mono">Quizzes</CustomLink>
+        <CustomLink to="/qa" className="text-black font-mono">Q&A</CustomLink>
+        <CustomLink to="/favorites" className="text-black font-mono">Favorites</CustomLink>
+        <CustomLink to="/join" className="px-4 py-2 bg-black text-white rounded-lg hover:bg-[#FBE8A6] hover:text-[#303C6C] font-mono">
           Join
         </CustomLink>
       </ul>

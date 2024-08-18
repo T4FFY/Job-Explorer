@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Careers from './Careers';
 // import { StackedCard } from './StackedCard'
 // import { jobAreas } from '../public/assets/data/JobAreas.jsx'
 
@@ -97,7 +98,7 @@ const JobCard = ({ title, imageUrl, learnMore }) => (
       </h5>
     </div>
     <div className="p-6 pt-0">
-      <Link to={learnMore}>
+      <Link to="/careers">
         <button className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
           Learn More
         </button>
@@ -107,15 +108,30 @@ const JobCard = ({ title, imageUrl, learnMore }) => (
 );
 
 const Explorecareer = () => (
+
+  <div className= "flex flex-col items-start justify-start bg-light-blue p-40">
+
+<h1 className=" font-mono text-6xl font-bold text-gray-900 mb-8 bg-pale-yellow bg-clip-border rounded-xl ">
+     Explore Your Careers
+    </h1>
+
+    <div className="w-[1000px]"><p className="font-mono text-lg text-gray-700 mb-6">
+    Explore the diverse world of careers and find your path! From creative fields like art and design to 
+    technical roles in engineering and IT, and impactful positions in healthcare and education, there is a career for every interest.
+    Dive into various industries, discover the skills required, and envision the future that best aligns with your passions and goals.
+    </p></div>
+
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 justify-items-center">
     {jobAreas.map(job => (
       <JobCard
         key={job.id}
         title={job.title}
         imageUrl={job.imageUrl}
-        learnMore={job.learnMore}
+        learnMore= {Careers}
       />
     ))}
+  </div>
+
   </div>
 );
 
