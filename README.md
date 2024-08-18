@@ -7,6 +7,8 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+# CareerNav.
+
 ## Inspiration
 Navigating the world of careers can be overwhelming for students, especially when conventional platforms like MyBlueprint fail to provide a comprehensive and engaging exploration of job areas. The process of researching each job individually can be tedious and ineffective. Our solution is to bridge this gap by offering a vibrant, centralized platform that introduces students to a wide array of professions in an interactive and captivating way. We aim to simplify the journey of understanding various career paths and make it more approachable for young students.
 
