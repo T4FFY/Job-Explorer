@@ -121,7 +121,7 @@ const Explorecareer = () => (
     Dive into various industries, discover the skills required, and envision the future that best aligns with your passions and goals.
     </p></div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 justify-items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-0 justify-items-center">
     {jobAreas.map(job => (
       <JobCard
         key={job.id}
