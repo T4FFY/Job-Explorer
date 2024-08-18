@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="flex flex-col items-start justify-start max-h-screen bg-light-blue p-60 overflow-hidden">
+    <>
+
+    <body className = "max-h-screen min-w-full bg-light-blue">
+
+    
+    <div className="flex flex-col items-start justify-start max-h-screen min-w-full bg-light-blue p-60 overflow-hidden">
     
    
 
      {/* Blue Triangle (Bottom Right) */}
-<div className="absolute bottom-0 right-0 w-0 h-0 border-r-[75vw] border-r-slate-blue border-t-[50vh] border-t-transparent"></div>
+<div className="absolute bottom-0 right-0 w-0 h-0 border-r-[75vw] border-r-slate-blue border-t-[50vh] border-t-transparent overflow-hidden"></div>
 
  {/* Orange Triangle (Bottom Left) */}
- <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[75vw] border-l-light-orange border-t-[50vh] border-t-transparent"></div>
+ <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[75vw] border-l-light-orange border-t-[50vh] border-t-transparent overflow-hidden"></div>
 
     <h1 className=" font-mono text-6xl font-bold text-gray-900 mb-8">
       Career Navigator
@@ -36,6 +41,8 @@ function Home() {
       />
   
     </div>
+    </body>
+    </>
 
 
 
