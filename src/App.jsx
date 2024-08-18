@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom"
 import Webdev from "./components/Webdev";
 import Careers from "./components/Careers";
 import PersonalityQuiz from "./components/PersonalityQuiz";
+import Favorites from "./components/Favorites";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/webdev" element={<Webdev />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/quizzes" element={<PersonalityQuiz />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </div>
   </> 

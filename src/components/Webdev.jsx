@@ -1,15 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 
 function Webdev() {
+  const [isFavorited, setIsFavorited] = useState(false);
+
+  useEffect(() => {
+    // Check if this job is in the favorites list in local storage
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    setIsFavorited(favorites.includes("webdev"));
+  }, []);
+
+  const handleFavoriteToggle = () => {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    let updatedFavorites;
+
+    if (isFavorited) {
+      updatedFavorites = favorites.filter(jobId => jobId !== "webdev");
+    } else {
+      updatedFavorites = [...favorites, "webdev"];
+    }
+
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    setIsFavorited(!isFavorited);
+  };
+
   return (
     <>
       <div className="flex flex-col bg-light-blue p-40 min-w-full">
         <div className="flex flex-row mb-8">
           <div className="flex-1 flex flex-col items-start justify-start mr-8">
-            <h1 className="font-mono text-6xl font-bold text-gray-900 mb-10 bg-pale-yellow bg-clip-border rounded-xl p-4">
-              Web Developer
-            </h1>
+            <div className="flex flex-row items-center mb-10">
+              <h1 className="font-mono text-6xl font-bold text-gray-900 bg-pale-yellow bg-clip-border rounded-xl p-4">
+                Web Developer
+              </h1>
+              <button
+                onClick={handleFavoriteToggle}
+                className="ml-4 text-red-500"
+              >
+                <FontAwesomeIcon
+                  icon={isFavorited ? solidHeart : regularHeart}
+                  size="2x"
+                />
+              </button>
+            </div>
 
             <div className="mb-8 bg-dark-blue bg-clip-border rounded-xl p-8">
               <h1 className="font-mono text-2xl font-bold text-pale-yellow mb-8 bg-clip-border rounded-xl">
@@ -42,14 +78,13 @@ function Webdev() {
           </div>
         </div>
 
-        {/* New Row of Elements */}
         <div className="flex flex-col gap-8 mt-8">
           <div className="bg-tangerine p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-bold mb-4">Skills</h2>
             <p className="text-gray-700">
               HTML, CSS, and JavaScript, with expertise in frontend frameworks,
               backend languages, database management, API integration,
-              responsive design, cross-browser compatibility, version control ,
+              responsive design, cross-browser compatibility, version control,
               and familiarity with deployment platforms and CI/CD processes.
             </p>
           </div>
