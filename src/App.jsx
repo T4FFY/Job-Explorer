@@ -4,7 +4,7 @@ import Explorecareer from "./components/Explorecareer"
 import { Route, Routes } from "react-router-dom"
 import Webdev from "./components/Webdev";
 import Careers from "./components/Careers";
-
+import PersonalityQuiz from "./components/PersonalityQuiz";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path="/explorecareer" element={<Explorecareer />} />
           <Route path="/webdev" element={<Webdev />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/quizzes" element={<PersonalityQuiz />} />
         </Routes>
       </div>
   </> 
