@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Webdev() {
     return(
       <>
-        <div className= "flex flex-col items-start justify-start bg-light-blue p-40">
+        <div className= "flex flex-col items-start justify-start bg-light-blue p-40 min-w-full">
   
   <h1 className=" font-mono text-6xl font-bold text-gray-900 mb-20 bg-pale-yellow bg-clip-border rounded-xl ">
     Web Developer</h1>

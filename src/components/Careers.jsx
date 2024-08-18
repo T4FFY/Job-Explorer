@@ -25,7 +25,7 @@ const careers = [
 function Careers() {
     return(
       <>
-    <div className= "flex flex-col items-start justify-start min-h-screen bg-light-blue p-40">
+    <div className= "flex flex-col items-start justify-start min-h-screen min-w-full bg-light-blue p-40">
         
          <h1 className=" font-mono text-6xl font-bold text-gray-900 mb-10 bg-pale-yellow bg-clip-border rounded-xl ">
              Technology & IT
